@@ -5,6 +5,7 @@ export {
   type LeadField,
 } from "./src/config/types.js";
 export { type DataConnector } from "./src/connectors/types.js";
+export { JsonConnector } from "./src/connectors/jsonConnector.js";
 export {
   Assistant,
   type AssistantResponse,

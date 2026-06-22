@@ -5,6 +5,7 @@ import { AssistantConfigSchema } from "../config/types.js";
 import { buildEnginePromptMessages, buildRuntimeContextMessage } from "./prompts.js";
 import { parseAssistantPayload } from "./leadExtractor.js";
 import { containsHandoffPhrase } from "./handoff.js";
+import { logTurn } from "../middleware/logger.js";
 
 export type Lead = Record<string, string | number>;
 
@@ -53,6 +54,8 @@ export class Assistant {
       { role: "assistant", content: reply },
     );
     this.trimHistory(this.config.maxTurns);
+
+    logTurn(userMessage, reply, shouldHandoff, lead !== null, this.history);
 
     return {
       reply,
