@@ -1,4 +1,4 @@
-export type SupportedProviderKind = "openai" | "gemini" | "anthropic";
+export type SupportedProviderKind = "openai" | "gemini" | "anthropic" | "grok";
 
 export interface ProviderAdapterSpec<TOptions> {
   kind: SupportedProviderKind;

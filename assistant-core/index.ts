@@ -15,13 +15,16 @@ export { type LLMMessage, type LLMProvider } from "./src/providers/types.js";
 export {
   AnthropicMessagesProvider,
   GeminiGenerateContentProvider,
+  GrokChatCompletionsProvider,
   OpenAIChatCompletionsProvider,
   ProviderError,
   ProviderResponseError,
   createAnthropicProvider,
   createGeminiProvider,
+  createGrokProvider,
   createOpenAIProvider,
   type AnthropicProviderOptions,
   type GeminiProviderOptions,
+  type GrokProviderOptions,
   type OpenAIProviderOptions,
 } from "./src/providers/index.js";

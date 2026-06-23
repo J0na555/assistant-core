@@ -11,7 +11,7 @@ A reusable TypeScript engine for deploying AI assistants with structured output,
 
 ## Structure
 
-```
+```text
 assistant-core/     — engine, never edited per client
 client-template/    — copy this per client
 ```

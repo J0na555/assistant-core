@@ -14,6 +14,11 @@ export {
   type AnthropicProviderOptions,
 } from "./anthropic.js";
 export {
+  GrokChatCompletionsProvider,
+  createGrokProvider,
+  type GrokProviderOptions,
+} from "./grok.js";
+export {
   ProviderError,
   ProviderResponseError,
 } from "./errors.js";
